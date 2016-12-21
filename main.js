@@ -87,15 +87,43 @@
 // console.log(confirmEnding("Bastian", "n"));
 // console.log(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification"));
 
-function repeatStringNumTimes(str, num) {
-  let finalStr = "";
-  while(0 < num) {
-    finalStr += str;
-      num--;
-  }
-    return finalStr;
-}
+// function repeatStringNumTimes(str, num) {
+//   let finalStr = "";
+//   while(0 < num) {
+//     finalStr += str;
+//       num--;
+//   }
+//     return finalStr;
+// }
+//
+// console.log(repeatStringNumTimes("abc", 3));
+// console.log(repeatStringNumTimes("*", 8));
+// console.log(repeatStringNumTimes("abc", -2));
 
-console.log(repeatStringNumTimes("abc", 3));
-console.log(repeatStringNumTimes("*", 8));
-console.log(repeatStringNumTimes("abc", -2));
+
+
+// function truncateString(str, num) {
+//
+//   // if str.length > str.length num
+//   // return ...
+//   // if the str.length num <= 3
+//   // the dots do Not add to str.length
+//   // console.log(str.length);
+//   // console.log(num);
+//
+//   if (str.length > num && num > 3) {
+//     return str.slice(0, (num - 3)) + '...';
+//   } else if (str.length > num && num <= 3) {
+//     return str.slice(0, num) + '...';
+//   } else {
+//     return str;
+//   }
+//
+// }
+
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", 11));
+// console.log(truncateString("Peter Piper picked a peck of pickled peppers", 14));
+// console.log(truncateString("A-", 1));
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2));
+// console.log(truncateString("Absolutely Longer", 2));
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
