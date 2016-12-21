@@ -45,3 +45,57 @@
 //   return longestWord.length;
 // }
 // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+//
+//
+// function titleCase(str) {
+//   str = str.toLowerCase().split(' ');
+//   for(var i=0; i < str.length; i++) {
+//     str[i]= str[i].charAt(0).toUpperCase() + str[i].slice(1);
+//
+//   }
+//   return str.join(' ');
+// }
+//
+// console.log(titleCase("I'm a little tea pot"));
+// console.log(titleCase("sHoRt AnD sToUt"));
+// console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));
+
+
+// function largestOfFour(arr) {
+//   let largestNumber = [0,0,0,0];
+//   for(var i=0; i < arr.length; i++) {
+//     for(var j=0; j < arr[i].length; j++) {
+//       if(arr[i][j] > largestNumber[i]) {
+//         largestNumber[i] = arr[i][j];
+//       }
+//     }
+//   }
+//   return largestNumber;
+// }
+//
+//
+//
+// console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+// console.log(largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+// console.log(largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));
+
+//
+// function confirmEnding(str, target) {
+//   return str.substr(-target.length) === target;
+// }
+//
+// console.log(confirmEnding("Bastian", "n"));
+// console.log(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification"));
+
+function repeatStringNumTimes(str, num) {
+  let finalStr = "";
+  while(0 < num) {
+    finalStr += str;
+      num--;
+  }
+    return finalStr;
+}
+
+console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("*", 8));
+console.log(repeatStringNumTimes("abc", -2));
