@@ -127,3 +127,37 @@
 // console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2));
 // console.log(truncateString("Absolutely Longer", 2));
 // console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
+
+// function chunkArrayInGroups(arr, size) {
+//   let tempArr = [];
+//   let newArr = [];
+//
+//   for(i=0; i <arr.length; i++) {
+//     if( i % size !== size-1)
+//     tempArr.push(arr[i]);
+//
+//    else {
+//     tempArr.push(arr[i]);
+//     newArr.push(tempArr);
+//     tempArr=[];
+//   }
+// }
+//
+//   if(tempArr.length !==0)
+//     newArr.push(tempArr);
+//       return newArr;
+// }
+//
+// console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+// console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2));
+// console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4));
+
+// function slasher(arr, howMany) {
+// return arr.slice(howMany);
+// }
+//
+// console.log(slasher([1, 2, 3], 2));
+// console.log(slasher([1, 2, 3], 0));
+// console.log(slasher(["burgers", "fries", "shake"], 1));
+// console.log(slasher([1, 2, 3], 4));
+// console.log(slasher([1, 2, 3], 9));
