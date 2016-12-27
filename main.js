@@ -161,3 +161,51 @@
 // console.log(slasher(["burgers", "fries", "shake"], 1));
 // console.log(slasher([1, 2, 3], 4));
 // console.log(slasher([1, 2, 3], 9));
+
+// function mutation(arr) {
+//   // console.log(arr[1].toLowerCase().split(''))
+//   return arr[1].toLowerCase()
+//                .split('')
+//                .every((letter) => {
+//                   // console.log(arr[0].toLowerCase().indexOf(letter));
+//                   return arr[0].toLowerCase()
+//                     .indexOf(letter) != -1;
+//                   });
+// }
+//
+//
+// console.log(mutation(["hello", "hey"]));
+// console.log(mutation(["hello", "neo"]));
+// console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+
+
+// function bouncer(arr) {
+//   return arr.filter(Boolean);
+// }
+//
+// console.log(bouncer([7, "ate", "", false, 9]));
+// console.log(bouncer([1, null, NaN, 2, undefined]));
+// console.log(bouncer(["a", "b", "c"]));
+// console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+
+
+// function destroyer(arr) {
+//   let argArr = arr.slice.call(arguments);
+//   argArr.splice(0,1);
+//   return arr.filter((element) => {
+//     return argArr.indexOf(element) === -1;
+//   });
+//
+// }
+//
+// console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+// console.log(destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3));
+// console.log(destroyer(["tree", "hamburger", 53], "tree", 53));
+
+
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  return num;
+}
+
+getIndexToIns([40, 60], 50);
