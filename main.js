@@ -203,9 +203,36 @@
 // console.log(destroyer(["tree", "hamburger", 53], "tree", 53));
 
 
-function getIndexToIns(arr, num) {
-  // Find my place in this sorted array.
-  return num;
-}
+// function getIndexToIns(arr, num) {
+//     arr.sort((a,b)=>{
+//       return a - b;
+//     });
+//   for(var i in arr) {
+//     if(arr[i] >= num)
+//       return parseInt(i);
+//     }
+//     return arr.length;
+// }
+//
+// console.log(getIndexToIns([5, 3, 20, 3], 5));
+// console.log(getIndexToIns([40, 60], 50));
+// console.log(getIndexToIns([2, 5, 10], 15));
+//
+// Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz
 
-getIndexToIns([40, 60], 50);
+function fizzBuzz(num) {
+  console.log(num);
+    for (var i = 0; i <= 100; i++) {
+      if (i % 5 === 0 && i % 3 === 0 ) {
+        console.log('fizzbuzz');
+      } else if (i % 5 === 0) {
+        console.log('buzz');
+      } else if (i % 3 === 0) {
+        console.log('fizz');
+      } else {
+        console.log(i);
+      }
+    }
+  }
+
+console.log(fizzBuzz(100));
