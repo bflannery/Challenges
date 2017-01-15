@@ -254,3 +254,29 @@
 // console.log(sumArr([1,2,3,4,10,11]));
 // console.log(sumArr([2,6,9,15,25,42]));
 // console.log(sumArr([19,42,98,15,10,3]));
+
+//Compare the values in 2 arrays.
+//If  Alice[i] > Bob[i], then Alice is awarded 1 point.
+//If Alice[i] < Bob[i] , then Bob is awarded 1 point.
+//If Alice[i] =  Bob[i], then neither person receives a point.
+
+function compArr(alice , bob){
+  alicePoints = 0;
+  bobPoints= 0;
+
+  for(i=0; i < 3; i++){
+    console.log(alice[i]);
+    console.log(bob[i]);
+      if(alice[i] < bob[i]) {
+        bobPoints += 1;
+      } else if (alice[i] > bob[i]) {
+        alicePoints += 1;
+      }
+    }
+    return 'AlicePoints = ' + alicePoints + ' ' + 'BobPoints = ' + bobPoints;
+  }
+
+
+console.log(compArr([5,6,7],[3,6,10]));
+console.log(compArr([32,0,19],[10,7,100]));
+console.log(compArr([8,510,32],[9,12,98]));
