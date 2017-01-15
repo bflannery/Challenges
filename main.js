@@ -220,19 +220,37 @@
 //
 // Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz
 
-function fizzBuzz(num) {
-  console.log(num);
-    for (var i = 0; i <= 100; i++) {
-      if (i % 5 === 0 && i % 3 === 0 ) {
-        console.log('fizzbuzz');
-      } else if (i % 5 === 0) {
-        console.log('buzz');
-      } else if (i % 3 === 0) {
-        console.log('fizz');
-      } else {
-        console.log(i);
-      }
-    }
-  }
+// function fizzBuzz(num) {
+//   console.log(num);
+//     for (var i = 0; i <= 100; i++) {
+//       if (i % 5 === 0 && i % 3 === 0 ) {
+//         console.log('fizzbuzz');
+//       } else if (i % 5 === 0) {
+//         console.log('buzz');
+//       } else if (i % 3 === 0) {
+//         console.log('fizz');
+//       } else {
+//         console.log(i);
+//       }
+//     }
+//   }
+//
+// console.log(fizzBuzz(100));
 
-console.log(fizzBuzz(100));
+//
+// We'll pass you an array of two numbers. Return the sum of those two numbers and all numbers between them.
+//
+// The lowest number will not always come first.
+
+
+//Given an array of X integers, can you find the sum of its elements?
+// function sumArr(arr) {
+//   let sum = arr.reduce((a,b) => {
+//     return a+b;
+//   }, 0);
+//   return sum;
+// }
+//
+// console.log(sumArr([1,2,3,4,10,11]));
+// console.log(sumArr([2,6,9,15,25,42]));
+// console.log(sumArr([19,42,98,15,10,3]));
