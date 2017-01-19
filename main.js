@@ -280,3 +280,38 @@
 // console.log(compArr([5,6,7],[3,6,10]));
 // console.log(compArr([32,0,19],[10,7,100]));
 // console.log(compArr([8,510,32],[9,12,98]));
+
+
+// function fizzBuzz(){
+// 	var output;
+// 	for(var i=1;i<=100;i++){
+// 		output = '';
+// 		if(i%3 === 0){
+// 			output+='Fizz';
+// 		}
+// 		if(i%5 === 0){
+// 			output+='Buzz';
+// 		}
+// 		if(output === '') {
+// 			output+=i;
+// 		}
+// 		console.log(output);
+// 	}
+// }
+// fizzBuzz();
+
+// Rotate the array (first arg) left n (second arg) amount of times
+
+// function arrRot(arr, n) {
+//   let i = 0;
+//
+//   let result = arr.map(function() {
+//
+//     return arr[(i++ + n) % arr.length];
+//   });
+//
+//   console.log(result.join(" "));
+//
+//   }
+//
+// arrRot([1,2,3,4,5],4);
