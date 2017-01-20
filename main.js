@@ -352,3 +352,12 @@
 //
 // console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
 // console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]));
+
+// function alphabetPosition(text) {
+//   var str = '';
+//   text.replace(/[^a-zA-Z]+/g,'').toLowerCase().split('').map(x=> str += (x.charCodeAt()-96 + ' '));
+//   return str.slice(0,-1);
+// }
+
+// 
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."));
