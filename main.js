@@ -324,3 +324,31 @@
 // }
 //
 // console.log(disemvowel("This website is for losers LOL!"));
+
+
+// Give 3 integers, will they make a triangle
+
+// function isTriangle(a,b,c){
+//   if(a+b > c && a+c > b && b+c > a) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+//
+// console.log(isTriangle(1,2,2));
+// console.log(isTriangle(7,2,2));
+
+
+// function sumTwoSmallestNumbers(numbers) {
+//   let sorting = numbers.sort((a,b) => {
+//     if(a > b) {
+//       return a;
+//     }
+//   });
+// return sorting[0] + sorting[1];
+//
+// }
+//
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+// console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]));
