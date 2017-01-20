@@ -315,3 +315,12 @@
 //   }
 //
 // arrRot([1,2,3,4,5],4);
+//
+
+// Remove vowels from the string
+
+// function disemvowel(str) {
+//   return str.replace(/[aeiou]/gi, '');
+// }
+//
+// console.log(disemvowel("This website is for losers LOL!"));
