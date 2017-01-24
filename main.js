@@ -359,5 +359,36 @@
 //   return str.slice(0,-1);
 // }
 
-// 
+//
 // console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+// S = string
+// N = string.length
+// firstStr = even characters of string
+// secondStr = odd characters of string
+// result = " {firstStr} + {secondStr} "
+
+
+
+// Split N strings into an even and odd string
+function evenOdd(arr) {
+
+  strArr = arr.splice(1,arr.length);
+
+  for(i=0; i < strArr.length; i++) {
+    even = [];
+    odd = [];
+    splitStr = strArr[i].toLowerCase().split('');
+      for(j=0; j < splitStr.length; j++) {
+        if(j % 2 === 0) {
+          even.push(splitStr[j]);
+        } else {
+          odd.push(splitStr[j]);
+      }
+    }
+  return odd.join('') + "  " + even.join('');
+}
+
+}
+
+console.log(evenOdd([ 2, "Hacker" , "Rank", "Steve"]));
