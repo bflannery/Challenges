@@ -371,24 +371,54 @@
 
 
 // Split N strings into an even and odd string
-function evenOdd(arr) {
+// function evenOdd(arr) {
+//
+//   strArr = arr.splice(1,arr.length);
+//
+//   for(i=0; i < strArr.length; i++) {
+//     even = [];
+//     odd = [];
+//     splitStr = strArr[i].toLowerCase().split('');
+//       for(j=0; j < splitStr.length; j++) {
+//         if(j % 2 === 0) {
+//           even.push(splitStr[j]);
+//         } else {
+//           odd.push(splitStr[j]);
+//       }
+//     }
+//   return odd.join('') + "  " + even.join('');
+// }
+//
+// }
+//
+// console.log(evenOdd([ 2, "Hacker" , "Rank", "Steve"]));
 
-  strArr = arr.splice(1,arr.length);
-
-  for(i=0; i < strArr.length; i++) {
-    even = [];
-    odd = [];
-    splitStr = strArr[i].toLowerCase().split('');
-      for(j=0; j < splitStr.length; j++) {
-        if(j % 2 === 0) {
-          even.push(splitStr[j]);
-        } else {
-          odd.push(splitStr[j]);
-      }
-    }
-  return odd.join('') + "  " + even.join('');
-}
-
-}
-
-console.log(evenOdd([ 2, "Hacker" , "Rank", "Steve"]));
+// 
+// function list(names) {
+// let nameStr = "";
+//
+// if(names.length === 0) return nameStr;
+//
+// if(names.length === 1) return nameStr+=names[0].name;
+//
+// for(i=0; i < names.length -2; i++) {
+//   nameStr += names[i].name + " ,";
+// }
+//
+// nameStr += names[names.length -2].name + " & " + names[names.length - 1].name;
+//
+// return nameStr;
+// }
+//
+// console.log(list([
+//   {name: 'Bart'},
+//   {name: 'Lisa'},
+//   {name: 'Maggie'},
+//   {name: 'Homer'},
+//   {name: 'Marge'}
+// ])
+// );
+//
+// console.log(list([]));
+// console.log(list([ {name:'Bart'}]));
+  //'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names"));
