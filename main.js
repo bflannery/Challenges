@@ -423,9 +423,27 @@
 // console.log(list([ {name:'Bart'}]));
   //'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names"));
 
-  // 
+  //
   // function getMiddle(s){
   //   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
   //
   //
   // console.log(getMiddle("test"));
+
+// 
+//   function iqTest(numbers) {
+//     var arrayNum = numbers.split(" ").map(Number);
+//     if (arrayNum[0] % 2 !== arrayNum[1] % 2 && arrayNum[0] % 2 !== arrayNum[2] % 2) {
+//       return 1;
+//     }
+//     else {
+//     for(i=0; i < numbers.length; i++) {
+//       if(arrayNum[i] % 2 !== arrayNum[0] %2) {
+//         return (i + 1);
+//       }
+//     }
+//   }
+// }
+//
+//
+// console.log(iqTest("2 4 7 8 10"));
