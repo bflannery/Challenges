@@ -430,7 +430,7 @@
   //
   // console.log(getMiddle("test"));
 
-// 
+//
 //   function iqTest(numbers) {
 //     var arrayNum = numbers.split(" ").map(Number);
 //     if (arrayNum[0] % 2 !== arrayNum[1] % 2 && arrayNum[0] % 2 !== arrayNum[2] % 2) {
@@ -446,4 +446,21 @@
 // }
 //
 //
-// console.log(iqTest("2 4 7 8 10"));
+// // console.log(iqTest("2 4 7 8 10"));
+//
+// function duplicateEncode(word){
+//     let dic = {}, res = '';
+//     word = word.toLowerCase();
+//     for (let i in word){
+//       if (!(word[i] in dic))
+//           dic[word[i]] = 0;
+//       dic[word[i]] ++;
+//     }
+//     for (let i in word)
+//       res += dic[word[i]] == 1 ? '(' : ')';
+//     return res;
+// }
+//
+// console.log(duplicateEncode("din"));
+// console.log(duplicateEncode("Success"));
+// console.log(duplicateEncode("recede"));
