@@ -464,3 +464,45 @@
 // console.log(duplicateEncode("din"));
 // console.log(duplicateEncode("Success"));
 // console.log(duplicateEncode("recede"));
+
+function rgb(r, g, b) {
+	function toHex(rgb) {
+		if (rgb < 0) {
+			return "00";
+		}
+
+		if (rgb > 255) {
+			return "FF";
+		}
+
+		var hex = rgb.toString(16);
+    console.log(hex);
+		return hex.length == 1 ? "0" + hex.toUpperCase() : hex.toUpperCase();
+	}
+	return toHex(r) + toHex(g) + toHex(b);
+}
+
+
+console.log(rgb(255, 255, 255));
+console.log(rgb(255, 0, 300));
+console.log(rgb(148, 0, 211));
+
+
+
+// function titleCase(title, minorWords) {
+//   let result = [];
+//   let splitWords = minorWords.toLowerCase().split(' ');
+//   let splitStr = title.toLowerCase().split(' ');
+//   let wordMap = splitStr.map((word, i ,arr) =>{
+//     if(word === splitWords[i]) {
+//       result += word[i];
+//     } else {
+//       result += word.charAt(0).toUpperCase();
+//     }
+//
+//   });
+//   console.log(result);
+//   }
+// console.log(titleCase('a clash of KINGS', 'a an the of'));
+// //
+// // splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1);
