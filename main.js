@@ -486,7 +486,7 @@
 // console.log(rgb(255, 255, 255));
 // console.log(rgb(255, 0, 300));
 // console.log(rgb(148, 0, 211));
-// 
+//
 // function anagrams(word, words) {
 //   return words.filter(function(item){
 //     return item.split('').sort().join('') === word.split('').sort().join('');
@@ -497,6 +497,14 @@
 //
 //
 // console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
+
+// function pigIt(str){
+//   return str.split(' ').map((word) => {
+//     return word.slice(1) + word.slice(0,1) + 'ay';
+//   }).join(' ');
+// }
+//
+// console.log(pigIt('Pig latin is cool'));
 
 // function titleCase(title, minorWords) {
 //   let result = [];
