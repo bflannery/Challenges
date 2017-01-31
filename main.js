@@ -465,29 +465,38 @@
 // console.log(duplicateEncode("Success"));
 // console.log(duplicateEncode("recede"));
 
-function rgb(r, g, b) {
-	function toHex(rgb) {
-		if (rgb < 0) {
-			return "00";
-		}
-
-		if (rgb > 255) {
-			return "FF";
-		}
-
-		var hex = rgb.toString(16);
-    console.log(hex);
-		return hex.length == 1 ? "0" + hex.toUpperCase() : hex.toUpperCase();
-	}
-	return toHex(r) + toHex(g) + toHex(b);
-}
-
-
-console.log(rgb(255, 255, 255));
-console.log(rgb(255, 0, 300));
-console.log(rgb(148, 0, 211));
-
-
+// function rgb(r, g, b) {
+// 	function toHex(rgb) {
+// 		if (rgb < 0) {
+// 			return "00";
+// 		}
+//
+// 		if (rgb > 255) {
+// 			return "FF";
+// 		}
+//
+// 		var hex = rgb.toString(16);
+//     console.log(hex);
+// 		return hex.length == 1 ? "0" + hex.toUpperCase() : hex.toUpperCase();
+// 	}
+// 	return toHex(r) + toHex(g) + toHex(b);
+// }
+//
+//
+// console.log(rgb(255, 255, 255));
+// console.log(rgb(255, 0, 300));
+// console.log(rgb(148, 0, 211));
+// 
+// function anagrams(word, words) {
+//   return words.filter(function(item){
+//     return item.split('').sort().join('') === word.split('').sort().join('');
+//   });
+// }
+//
+//
+//
+//
+// console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
 
 // function titleCase(title, minorWords) {
 //   let result = [];
