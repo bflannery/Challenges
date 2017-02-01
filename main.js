@@ -506,20 +506,21 @@
 //
 // console.log(pigIt('Pig latin is cool'));
 
-// function titleCase(title, minorWords) {
-//   let result = [];
-//   let splitWords = minorWords.toLowerCase().split(' ');
-//   let splitStr = title.toLowerCase().split(' ');
-//   let wordMap = splitStr.map((word, i ,arr) =>{
-//     if(word === splitWords[i]) {
-//       result += word[i];
-//     } else {
-//       result += word.charAt(0).toUpperCase();
-//     }
-//
-//   });
-//   console.log(result);
-//   }
-// console.log(titleCase('a clash of KINGS', 'a an the of'));
-// //
-// // splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1);
+function inArray(array1,array2){
+result = [];
+
+for(i=0; i<array2.length; i++) {
+  for(j=0; j<array1.length; j++) {
+      let current = this[j];
+    if(array2[i].includes(current)) {
+      if(result.indexOf(current) < 0)
+        result.push(current);
+    }
+return result;
+    }
+
+    }
+
+  }
+
+console.log(inArray(["xyz", "live", "strong"], ["lively", "alive", "harp", "sharp", "armstrong"]));
