@@ -507,50 +507,68 @@
 // console.log(pigIt('Pig latin is cool'));
 
 
-function solution(number){
-
-var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
-var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
-
-var romanized = '';
-
-for(i=0; i<decimalValue.length; i++) {
-    while(decimalValue[i] <= number) {
-      console.log(romanNumeral[i]);
-      romanized += romanNumeral[i];
-    number -= decimalValue[i];
-    }
-  }
-  return romanized;
-}
-
-console.log(solution(1000));
-
-function sumAll(arr) {
-  let tempSum = 0;
-  let smallNum = Math.min(arr[0], arr[1]);
-  let largeNum = Math.max(arr[0], arr[1]);
-
-  for(i=smallNum; i<=largeNum; i++) {
-    tempSum += i;
-}
-return tempSum;
-}
-console.log(sumAll([1, 4]));
-console.log(sumAll([1, 4]));
-console.log(sumAll([5, 10]));
-console.log(sumAll([10, 5]));
-
-
-function diffArray(arr1, arr2) {
-  let mergeArr = arr1.concat(arr2);
-  let filteredArr = mergeArr.filter((item) => {
-    if(!arr1.includes(item) || !arr2.includes(item)){
-      return item;
-    }
-
-  });
-}
-console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
-// console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
-// console.log(diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]));
+// function solution(number){
+//
+// var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+// var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+//
+// var romanized = '';
+//
+// for(i=0; i<decimalValue.length; i++) {
+//     while(decimalValue[i] <= number) {
+//       console.log(romanNumeral[i]);
+//       romanized += romanNumeral[i];
+//     number -= decimalValue[i];
+//     }
+//   }
+//   return romanized;
+// }
+//
+// console.log(solution(1950));
+//
+// function sumAll(arr) {
+//   let tempSum = 0;
+//   let smallNum = Math.min(arr[0], arr[1]);
+//   let largeNum = Math.max(arr[0], arr[1]);
+//
+//   for(i=smallNum; i<=largeNum; i++) {
+//     tempSum += i;
+// }
+// return tempSum;
+// }
+// console.log(sumAll([1, 4]));
+// console.log(sumAll([1, 4]));
+// console.log(sumAll([5, 10]));
+// console.log(sumAll([10, 5]));
+//
+//
+// function diffArray(arr1, arr2) {
+//   let mergeArr = arr1.concat(arr2);
+//   let filteredArr = mergeArr.filter((item) => {
+//     if(!arr1.includes(item) || !arr2.includes(item)){
+//       return item;
+//     }
+//
+//   });
+// }
+// console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+// // console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
+// // console.log(diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]));
+//
+//
+// function solution(number){
+//
+// var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+// var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+// var romanized = '';
+//
+// for(i=0; i<decimalValue.length; i++) {
+//     while(decimalValue[i] <= number) {
+//       romanized += romanNumeral[i];
+//       number -= decimalValue[i];
+//     }
+//   }
+//   return romanized;
+// }
+//
+// console.log(solution(1950));
