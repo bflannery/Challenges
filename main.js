@@ -650,7 +650,7 @@
 // // }
 // console.log(replace("His name is Tom", "Tom", "john"));
 
-// 
+//
 //
 // function translatePigLatin(str) {
 //   let pig = '';
@@ -668,3 +668,18 @@
 // // console.log(translatePigLatin("california"));
 // // console.log(translatePigLatin("paragraphs"));
 // console.log(translatePigLatin("glove"));
+
+
+function booWho(bool) {
+  console.log(typeof bool);
+if(typeof bool === 'boolean') {
+  return true;
+} else {
+  return false;
+}
+
+}
+
+console.log(booWho(true));
+console.log(booWho(false));
+console.log(booWho(null));
