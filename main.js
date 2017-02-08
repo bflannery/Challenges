@@ -571,4 +571,100 @@
 //   return romanized;
 // }
 //
-// console.log(solution(1950));
+// // console.log(solution(1950));
+//
+// function whatIsInAName(collection, source) {
+//   var arr = [];
+//   var keys = Object.keys(source);
+//   // Filter array and remove the ones that do not have the keys from source.
+//   arr = collection.filter((obj) => {
+//     //Use the Array method every() instead of a for loop to check for every key from source.
+//     return keys.every((key) => {
+//       // Check if the object has the property and the same value.
+//       return obj.hasOwnProperty(key) && obj[key] === source[key];
+//     });
+//   });
+//
+//   return arr;
+// }
+// //
+// // console.log(whatIsInAName([{
+// //     first: "Romeo",
+// //     last: "Montague"
+// // }, {
+// //     first: "Mercutio",
+// //     last: null
+// // }, {
+// //     first: "Tybalt",
+// //     last: "Capulet"
+// // }], {
+// //     last: "Capulet"
+// // }));
+//
+//
+// console.log(whatIsInAName([{
+//     "a": 1,
+//     "b": 2
+// }, {
+//     "a": 1
+// }, {
+//     "a": 1,
+//     "b": 2,
+//     "c": 2
+// }], {
+//     "a": 1,
+//     "b": 2
+// }));
+
+
+// function myReplace(str, before, after) {
+// let splitStr = str.split(' ');
+//
+// for(i=0; i<splitStr.length; i++) {
+//
+//   if(splitStr[i] === before) {
+//     regexp = /^[A-Z]/;
+//     if (regexp.test(before)) {
+//       str = str.replace(splitStr[i], after.charAt(0).toUpperCase() + after.slice(1));
+//     }else {
+//       str = str.replace(splitStr[i], after);
+//       }
+//     }
+//   }
+//   return str;
+// }
+//
+// // console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+// // console.log(myReplace("This has a spellngi error", "spellngi", "spelling"));
+// // console.log(myReplace("He is Sleeping on the couch", "Sleeping", "sitting"));
+//
+//
+// function replace(str, before, after) {
+//   var index = str.indexOf(before);
+//   if (str[index] === str[index].toUpperCase()) {
+//     after = after.charAt(0).toUpperCase() + after.slice(1);
+//   }
+//     str = str.replace(before, after);
+//
+//   return str;
+// // }
+// console.log(replace("His name is Tom", "Tom", "john"));
+
+// 
+//
+// function translatePigLatin(str) {
+//   let pig = '';
+//   let reg = /[aeiou]/gi;
+//
+//   if(str[0].match(reg)) {
+//     pig = str + 'way';
+//   } else {
+//     let vowelIndice = str.indexOf(str.match(reg)[0]);
+//     pig = str.substr(vowelIndice) + str.substr(0,vowelIndice) + 'ay';
+//   }
+//   return pig;
+// }
+// //
+// // console.log(translatePigLatin("california"));
+// // console.log(translatePigLatin("paragraphs"));
+// console.log(translatePigLatin("glove"));
