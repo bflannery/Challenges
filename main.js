@@ -670,16 +670,34 @@
 // console.log(translatePigLatin("glove"));
 
 
-function booWho(bool) {
-  console.log(typeof bool);
-if(typeof bool === 'boolean') {
-  return true;
-} else {
-  return false;
-}
+// function booWho(bool) {
+//   console.log(typeof bool);
+// if(typeof bool === 'boolean') {
+//   return true;
+// } else {
+//   return false;
+// }
+//
+// }
+//
+// console.log(booWho(true));
+// console.log(booWho(false));
+// console.log(booWho(null));
 
-}
 
-console.log(booWho(true));
-console.log(booWho(false));
-console.log(booWho(null));
+// function uniteUnique(arr) {
+//   let tempArr = [];
+//   let args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+//   let flatArr = args.reduce(function(a, b) {
+//       return a.concat(b);
+//     });
+//     for(i=0; i<flatArr.length; i++) {
+//       if(!tempArr[flatArr[i]]) {
+//         tempArr.push(flatArr[i]);
+//       }
+//     }
+//     return tempArr;
+//   }
+//
+// console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+// console.log(uniteUnique([1, 2, 3], [5, 2, 1]));
