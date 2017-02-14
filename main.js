@@ -683,21 +683,41 @@
 // console.log(booWho(true));
 // console.log(booWho(false));
 // console.log(booWho(null));
-
-
-// function uniteUnique(arr) {
-//   let tempArr = [];
-//   let args = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
-//   let flatArr = args.reduce(function(a, b) {
-//       return a.concat(b);
-//     });
-//     for(i=0; i<flatArr.length; i++) {
-//       if(!tempArr[flatArr[i]]) {
-//         tempArr.push(flatArr[i]);
-//       }
+// function isPrime(n){
+//   var divisor = 2;
+//
+//   while (n > divisor){
+//     if(n % divisor === 0){
+//      return false;
 //     }
-//     return tempArr;
+//     else
+//       divisor++;
+//   }
+//   return true;
+// }
+//
+// console.log(isPrime(137));
+//
+// function fibonacci(n){
+//   var fibo = [0, 1];
+//
+//   if (n <= 2) return 1;
+//
+//   for (var i = 2; i <=n; i++ ){
+//    fibo[i] = fibo[i-1]+fibo[i-2];
+//    console.log(fibo[i]);
 //   }
 //
-// console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
-// console.log(uniteUnique([1, 2, 3], [5, 2, 1]));
+//  return fibo[n];
+// }
+//
+// console.log(fibonacci(3));
+
+function fibonacci(n){
+  if(n<=1)
+    return n;
+  else
+    console.log(fibonacci(n-1) + fibonacci(n-2));
+}
+
+fibonacci(12);
