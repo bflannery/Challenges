@@ -713,11 +713,29 @@
 //
 // console.log(fibonacci(3));
 
-function fibonacci(n){
-  if(n<=1)
-    return n;
-  else
-    console.log(fibonacci(n-1) + fibonacci(n-2));
+// function fibonacci(n){
+//   if(n<=1)
+//     return n;
+//   else
+//     return fibonacci(n-1) + fibonacci(n-2));
+// }
+//
+// fibonacci(12);
+//
+function sumFinder(arr, sum){
+  var len = arr.length;
+
+  for(var i =0; i<len-1; i++){
+     for(var j = i+1;j<len; j++){
+        if (arr[i] + arr[j] == sum)
+            return true;
+     }
+  }
+
+  return false;
 }
 
-fibonacci(12);
+console.log(sumFinder([6,4,3,2,1,7], 9));
+//true
+console.log(sumFinder([6,4,3,2,1,7], 2));
+//false
